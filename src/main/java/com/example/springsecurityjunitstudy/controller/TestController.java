@@ -20,7 +20,7 @@ public class TestController {
     }
 
     @Secured({"ROLE_ADMIN"})
-    @GetMapping(value = "admin")
+    @GetMapping(value = "/admin")
     public SecurityMessage admin() {
         return SecurityMessage.builder()
                 .message("admin page")
